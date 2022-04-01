@@ -26,9 +26,18 @@ export default {
    */
   target: 'static',
   /*
+   ** Server target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
+  server: {
+    port: process.env.SERVER_PORT || '3000',
+    host: '127.0.0.1',
+    timing: false
+  },
+  /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
-   */
+  /*
   head: {
     title: process.env.npm_package_name || '',
     meta: [
